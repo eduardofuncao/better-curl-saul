@@ -4,7 +4,7 @@ pkgs.buildGoModule {
   pname = "better-curl-saul";
   version = "v0.3.0";
 
-  src = ../.;
+  src = pkgs.lib.cleanSource ../.;
 
   vendorHash = "sha256-h/W5e64XQmfDgW6JPgxOJ1Jw8B18SsaX31nDvPTAQHI=";
 
